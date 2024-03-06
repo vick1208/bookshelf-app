@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3006e73413.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="head">
+        <h1 class="head_title">My Bookshelf</h1>
+    </header>
+    <main>
+        <section>
+            <div class="row">
+                <div class="col flex-left">
+                    <h2>Buat data buku</h2>
+                    <form id="inputBookForm">
+                        <div class="input-form-group">
+                            <label for="bookTitle">Judul</label>
+                            <input type="text" id="bookTitle" placeholder="Catatan Seorang Demonstran" required>
+                        </div>
+                        <div class="input-form-group">
+                            <label for="bookAuthor">Penulis</label>
+                            <input type="text" id="bookAuthor" placeholder="Soe Hok Gie" required>
+                        </div>
+                        <div class="input-form-group">
+                            <label for="bookYP">Terbit</label>
+                            <input type="number" id="bookYP" placeholder="1983" required>
+                        </div>
+                        <div class="input-checkbox-group">
+                            <input type="checkbox" id="inputAR">
+                            <label for="inputAR">Sudah dibaca</label>
+                        </div>
+                        <div class="buttons">
+                            <!-- <input type="reset" value="Kosongkan Input"> -->
+                            <button type="reset" id="bookResetButton">Kosongkan Input</button>
+                            <!-- <input type="submit" value="Simpan Data"> -->
+                            <button type="submit" id="bookSubButton">Simpan Data</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col flex-right">
+                    <div class="search-container">
+                        <form class="searchBookForm" id="searchBookForm">
+                            <input type="search" id="searchBookKeyword" placeholder="Cari judul buku (catatan seorang)">
+                            <input type="submit" value="Cari">
+                        </form>
+                        <div class="container-book-unfinished">
+                            <h3>Belum Selesai Dibaca</h3>
+                            <div id="list-unfinished-book">
+                            </div>
+                        </div>
+                        <div class="container-book-finished">
+                            <h3>Selesai Dibaca</h3>
+                            <div id="list-finished-book">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

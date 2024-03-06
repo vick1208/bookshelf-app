@@ -1,0 +1,254 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.head {
+  background-color: #a5dd9b;
+  padding: 1.5rem;
+  color: #232931;
+}
+
+.head_title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+
+}
+
+.col {
+  padding: 12px;
+  flex: 1;
+}
+
+.flex-left {
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: #FFD6A5;
+  border: 2px solid #FF9B9B;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+}
+
+.flex-left>h2 {
+  text-align: center;
+  margin: 13px;
+  color: #232933;
+}
+
+.flex-right {
+  margin-left: 10px;
+  background-color: #c5ebaa;
+  border: 2px solid #f2c18d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+}
+
+.input-form-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.input-form-group>label {
+  font-size: 1em;
+  font-weight: 500;
+  color: #4B5563;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px 0px 0px 10px;
+  border-right: 1px solid #ccc;
+  min-width: 15%;
+  padding: 8px 18px;
+}
+
+.input-form-group>input[type=text],
+input[type=number] {
+  border: 1px;
+  border-radius: 8px;
+  padding: 6px;
+  flex-grow: 1;
+}
+
+.input-form-group>input[type=number]:focus,
+input[type=text]:focus {
+  outline: none;
+}
+
+.input-checkbox-group {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.input-checkbox-group>input {
+  margin-right: 8px;
+}
+
+.input-checkbox-group>label {
+  font-weight: 300;
+  color: #232933;
+}
+
+.buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 11px;
+}
+
+.buttons>button {
+  border: 0px;
+  flex-grow: 1;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.buttons>button.btn-read-not-read {
+  border-width: 0px;
+  flex-grow: 1;
+  font-weight: 300;
+  border-radius: 5px;
+  background-color: #a5dd9b;
+  margin-right: 4px;
+  color: #232933;
+  transition: all 400ms ease-in-out;
+}
+
+.buttons>button.btn-read-not-read:hover {
+  background-color: #57ba45;
+}
+
+.buttons>button.btn-edit-book{
+  border-width: 0px;
+  flex-grow: 1;
+  font-weight: 300;
+  border-radius: 5px;
+  background-color: #F6F193;
+  margin-right: 4px;
+  color: #232933;
+  transition: all 400ms ease-in-out;
+}
+.buttons>button.btn-edit-book:hover {
+  background-color: #F6F123;
+}
+
+.buttons>button.btn-remove-book {
+  border-width: 0px;
+  flex-grow: 1;
+  font-weight: 300;
+  border-radius: 5px;
+  background-color: #ed7b7b;
+  margin-right: 4px;
+  color: #232933;
+  transition: all 400ms ease-in-out;
+}
+
+.buttons>button.btn-remove-book:hover {
+  background-color: #e63737;
+}
+
+
+.buttons>button[type=reset] {
+  color: #232931;
+  background-color: #F6F193;
+  margin-right: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons>button[type=reset]:hover {
+  background-color: rgb(230, 224, 119);
+}
+
+.buttons>button[type=submit] {
+  margin-left: 8px;
+  color: #232933;
+  background-color: #BFEA7C;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons>button[type=submit]:hover {
+  background-color: #A5DD9B;
+}
+
+.container-book-unfinished {
+  margin-top: 15px;
+  padding: 11px;
+  border: 1px solid #FF9B9B;
+  border-radius: 7px;
+}
+
+.container-book-unfinished>h3 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.container-book-finished {
+  margin-top: 15px;
+  padding: 11px;
+  border: 1px solid #FF9B9B;
+  border-radius: 7px;
+}
+
+.container-book-finished>h3 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+
+.book-card {
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #E5E5E5;
+  border: 1px solid #CA8A04;
+  border-radius: 11px;
+}
+
+
+.searchBookForm {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240, 240, 240);
+  border-radius: 11px;
+}
+
+.searchBookForm>input[type=search] {
+  flex-grow: 1;
+  border: 0.5px solid #d6d6d6;
+  border-radius: 5px 0px 0px 5px;
+  padding: 6px;
+}
+
+.searchBookForm>input[type=submit] {
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #dfb768;
+  background-color: #a5dd9b;
+  border-radius: 0px 8px 8px 0px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+
+.searchBookForm>input[type=submit]:hover {
+
+  background-color: #a6cc9b;
+}
+
+.searchBookForm>input[type=search]:focus {
+  outline: none;
+}
